@@ -6,7 +6,7 @@ defineEmits(['changeTab'])
 </script>
 
 <template>
-  <ul class="flex flex-row emd:flex-col w-full emd:w-[200px] md:space-y md:space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400">
+  <ul class="flex flex-row emd:flex-col w-full emd:w-[200px] md:space-y md:space-y-4 text-sm font-medium text-gray-500">
     <li
       v-for="(item, idx) of tabs"
       :key="idx"

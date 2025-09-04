@@ -9,8 +9,8 @@ const fields = usersStore.takeFields
     <h2 v-if="!usersStore.users.length" class="text-center pb-[20px] text-[25px] text-blue-800 font-bold">User list is empty</h2>
     <div v-else>
       <h2 class="text-center pb-[20px] text-[25px] text-blue-800 font-bold">User List</h2>
-      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
           <tr>
             <th
               v-for="item of fields"
@@ -26,7 +26,7 @@ const fields = usersStore.takeFields
           <tr
             v-for="user of usersStore.filteredAndSortedUsers"
             :key="user.id"
-            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+            class="bg-white border-b border-gray-200">
               <td
                 v-for="item of fields"
                 :key="`${user.id + user[item]}`"

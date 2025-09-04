@@ -28,11 +28,11 @@
     <div class="mt-3" v-else>
       <div>Sort order:</div>
       <ul
-        class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+        class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg">
         <li
           v-for="(item, idx) of usersStore.sortBy"
           :key="item"
-          class="w-full px-4 py-2 border-b border-gray-200 first:rounded-t-lg dark:border-gray-600 last:rounded-b-lg flex justify-between"
+          class="w-full px-4 py-2 border-b border-gray-200 first:rounded-t-lg last:rounded-b-lg flex justify-between"
         >
           <p>{{ `${idx + 1}` }}. {{ item }}</p>
           <button
